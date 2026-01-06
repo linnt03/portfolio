@@ -68,7 +68,6 @@ body {
 
 /* TEXT BOX */
 .project-text {
-    background: #f6f6f6;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -78,7 +77,6 @@ body {
 
 /* IMAGE BOX */
 .project-image {
-    background: #f6f6f6;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -87,7 +85,6 @@ body {
 
 .project-image img {
     width: 100%;
-    max-width: 320px;
     height: auto;
     object-fit: contain;
     transition: transform 0.3s ease;
