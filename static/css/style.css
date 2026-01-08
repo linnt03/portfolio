@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Helvetica;
     color: #111;
     background: #fff;
     line-height: 1.6;
@@ -51,6 +51,7 @@ body {
 
 .project-title {
     font-size: 1.8rem;
+
 }
 
 .project-tagline {
@@ -70,9 +71,17 @@ body {
 .project-text {
     padding: 1rem;
     display: flex;
+    margin-bottom: 1rem;
     flex-direction: column;
     justify-content: top;
     font-size: 0.95rem;
+}
+
+.project-header {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* IMAGE BOX */
@@ -116,6 +125,8 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
+    margin-top: 2rem;
+
 }
 
 .figma-gallery img {
