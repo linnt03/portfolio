@@ -150,7 +150,6 @@ footer {
 
 @media (max-width: 900px) {
 
-    /* GENERELL MOBIL-BREDDE */
     .project {
         padding: 0 1.25rem 3rem;
     }
@@ -160,7 +159,7 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    /* TEKST – LESBAR PÅ MOBIL */
+    /* TEXT */
     .project-text {
         max-width: 600px;
         margin: 0 auto;
@@ -168,7 +167,6 @@ footer {
         font-size: 0.95rem;
     }
 
-    /* TITLER */
     .project-title {
         font-size: 1.5rem;
         line-height: 1.3;
@@ -178,7 +176,7 @@ footer {
         font-size: 0.9rem;
     }
 
-    /* BILDER */
+    /* IMAGES */
     .project-image {
         padding: 0;
         margin-top: 1.5rem;
@@ -189,7 +187,7 @@ footer {
         height: auto;
     }
 
-    /* FIGMA – DETTE ER KRITISK */
+    /* FIGMA */
     .figma-gallery {
         grid-template-columns: 1fr;
     }
@@ -201,10 +199,5 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
-  body {
-    background: lime !important;
-  }
-}
 
 
