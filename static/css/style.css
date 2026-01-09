@@ -142,3 +142,89 @@ footer {
     padding: 3rem 2rem;
     color: #666;
 }
+
+
+
+
+/*---PHONE FORMAT --- */
+
+@media (max-width: 900px) {
+
+    /* HERO */
+    .hero {
+        padding: 3rem 1.5rem 1.5rem;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        letter-spacing: 0.08em;
+    }
+
+    /* 3D PLACEHOLDER */
+    .bookshelf-placeholder {
+        margin: 1.5rem;
+        height: 220px;
+    }
+
+    /* PROJECT GRID -> STACK */
+    .project-content {
+        grid-template-columns: 1fr;
+    }
+
+    /* TEXT */
+    .project-text {
+        padding: 0;
+        font-size: 0.95rem;
+    }
+
+    /* IMAGE */
+    .project-image {
+        padding: 0;
+    }
+
+    .project-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* FIGMA GALLERY */
+    .figma-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .figma-gallery img {
+        height: auto;
+        max-height: 480px;
+    }
+
+    /* LINKS */
+    .project-link {
+        margin-top: 2rem;
+    }
+}
+
+/* EKSTRA LITEN MOBIL */
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .project-title {
+        font-size: 1.4rem;
+    }
+
+    .project-tagline {
+        font-size: 0.9rem;
+    }
+
+    .divider {
+        margin: 3rem 1rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
+
