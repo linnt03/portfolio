@@ -28,7 +28,6 @@ body {
 /* 3D PLACEHOLDER */
 .bookshelf-placeholder {
     height: 300px;
-    background: #eaeaea;
     margin: 2rem;
     display: flex;
     align-items: center;
