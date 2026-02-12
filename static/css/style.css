@@ -48,6 +48,13 @@ body {
   text-align: center;
 }
 
+.intro-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
 .intro-text {
     padding: 1rem;
     display: flex;
