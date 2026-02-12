@@ -48,6 +48,9 @@ body {
   text-align: center;
 }
 
+.intro-text p {
+  margin-bottom: 1.5rem;
+}
 
 .intro-text {
   font-size: 1.05rem;
