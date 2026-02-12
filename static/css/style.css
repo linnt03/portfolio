@@ -48,17 +48,13 @@ body {
   text-align: center;
 }
 
-.intro-header {
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
-  margin-bottom: 1.5rem;
-}
 
 .intro-text {
   font-size: 1.05rem;
   line-height: 1.8;
+  font-weight: 400;
   color: #333;
+  margin-bottom: 1.5rem;
 }
 
 
