@@ -13,16 +13,21 @@
 </head>
 <body>
 
-<!-- 3D BOKHYLLE (PLASSHOLDER) -->
-<div class="bookshelf-placeholder">
-</div>
+<section class="hero-image">
+  <picture>
+    <!-- Mobil -->
+    <source
+      media="(max-width: 768px)"
+      srcset="static/images/headerPhone.png"
+    >
 
-
-<!-- NAVN -->
-<header class="hero">
-    <h1>LINN THORESEN</h1>
-    <p class="subtitle">design portfolio (work in progress...)</p>
-</header>
+    <!-- Desktop fallback -->
+    <img
+      src="static/images/headerDesktop.png"
+      alt="Hero bilde"
+    >
+  </picture>
+</section>
 
 
 

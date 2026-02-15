@@ -11,19 +11,25 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
-.hero {
-    padding: 4rem 2rem 2rem;
+/* HEADER Image */
+.hero-image {
+  width: 100%;
+  height: 100vh;          
+  overflow: hidden;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    letter-spacing: 0.12em;
+.hero-image picture,
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
-.subtitle {
-    color: #555;
+.hero-image img {
+  object-fit: cover;     
+  object-position: center;
 }
+
 
 /* 3D PLACEHOLDER */
 .bookshelf-placeholder {
