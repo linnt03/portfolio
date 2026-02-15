@@ -30,16 +30,6 @@ body {
 }
 
 
-
-/* 3D PLACEHOLDER */
-.bookshelf-placeholder {
-    height: 300px;
-    margin: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /* DIVIDER */
 .divider {
     height: 1px;
@@ -62,7 +52,7 @@ body {
   font-size: 1.05rem;
   line-height: 1.8;
   font-weight: 400;
-  color: #333;
+  color: #2f3a44;
 }
 
 
@@ -79,7 +69,7 @@ body {
 }
 
 .project-tagline {
-    color: #666;
+    color: #6b7a86;
     margin-bottom: 2rem;
 }
 
@@ -133,7 +123,7 @@ body {
     margin-top: 1.5rem;
     text-decoration: none;
     font-weight: 600;
-    color: #000;
+    color: #3a4650;
 }
 
 .project-link i {
@@ -164,7 +154,7 @@ body {
 /* FOOTER */
 footer {
     padding: 3rem 2rem;
-    color: #666;
+    color: #3a4650;
 }
 
 
