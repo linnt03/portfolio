@@ -145,10 +145,11 @@ body {
 }
 
 .figma-gallery img {
+    height: 520px;     
     width: 100%;
-    height: auto;
-    max-height: 320px;
-    object-fit: contain;
+    object-fit: cover;      
+    background: #eee;
+    object-position: top;
 }
 
 /* FOOTER */
@@ -216,8 +217,8 @@ footer {
     }
 
     .figma-gallery img {
-        height: auto;          
-        max-height: none;
+        height: auto;
+        width: 100%;
         object-fit: contain;
     }
 }
