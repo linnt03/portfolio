@@ -146,10 +146,9 @@ body {
 
 .figma-gallery img {
     width: 100%;
-    height: 520px;          
-    object-fit: cover;      
-    background: #eee;
-    object-position: top;
+    height: auto;
+    max-height: 320px;
+    object-fit: contain;
 }
 
 /* FOOTER */
