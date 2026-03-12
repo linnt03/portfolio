@@ -133,7 +133,7 @@ body {
 
 /* FIGMA */
 .figma-text {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .figma-gallery {
@@ -150,12 +150,6 @@ body {
     object-fit: cover;      
     background: #eee;
     object-position: top;
-}
-
-/* FOOTER */
-footer {
-    padding: 3rem 2rem;
-    color: #3a4650;
 }
 
 
