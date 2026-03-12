@@ -125,6 +125,9 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: #2c4251;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
 
 .project-link i {
