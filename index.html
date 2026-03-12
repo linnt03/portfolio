@@ -356,7 +356,19 @@ TODO :
 
 
 <section class="hero-image">
-  <img src="static/images/bottomBar.png" alt="Hero bilde">
+  <picture>
+    <!-- Mobil -->
+    <source
+      media="(max-width: 768px)"
+      srcset="static/images/bottombarPhone.png"
+    >
+
+    <!-- Desktop fallback -->
+    <img
+      src="static/images/bottomBar.png"
+      alt="Hero bilde"
+    >
+  </picture>
 </section>
 
 </body>
