@@ -13,7 +13,7 @@
 
 body {
     font-family: "Courier Prime", monospace;
-    color: #223440;
+    color: #1e1e1e;
     background: #fff;
     line-height: 1.6;
     padding: 4rem 2rem 7rem;
@@ -127,7 +127,7 @@ body {
   font-size: 1.05rem;
   line-height: 1.8;
   font-weight: 400;
-  color: #2c4251;
+  color: #252525;
 }
 
 
@@ -199,7 +199,7 @@ body {
     margin-top: 1.5rem;
     text-decoration: none;
     font-weight: 600;
-    color: #2c4251;
+    color: #373737;
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
