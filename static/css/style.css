@@ -1,5 +1,5 @@
 :root {
-    --paper: #edeae5;
+    --paper: #f1efec;
     --crease: hsla(39, 19%, 33%, 0.259);
     --crease-shadow: hsla(39, 19%, 33%, 0.071);
     --crease-light: hsla(39, 12%, 56%, 0.071);
@@ -12,7 +12,7 @@
 }
 
 body {
-    font-family: Helvetica;
+    font-family: "Courier Prime", monospace;
     color: #223440;
     background: #fff;
     line-height: 1.6;
@@ -40,7 +40,7 @@ body {
     z-index: -1;
     pointer-events: none;
     mix-blend-mode: multiply;
-    opacity: 0.5;
+    opacity: 0.4;
     background-image: url("../images/papertexture.jpg");
     background-size: 440px 440px;
     background-repeat: repeat;
