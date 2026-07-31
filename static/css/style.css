@@ -60,11 +60,12 @@ body {
     background-repeat: repeat;
 }
 
-/* SIDE-NAV */
+/* SIDE-NAV (utenfor arket) */
 .page-nav {
+    max-width: 1180px;
+    margin: 0 auto 1.5rem;
     display: flex;
     justify-content: flex-end;
-    padding: 1.5rem 2rem 0;
 }
 
 .page-nav a {
@@ -278,7 +279,7 @@ body {
     }
 
     .page-nav {
-        padding: 1rem 1.25rem 0;
+        margin-bottom: 1rem;
     }
 
     .page-content {
