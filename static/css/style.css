@@ -1,3 +1,10 @@
+:root {
+    --paper: #edeae5;
+    --crease: hsla(39, 19%, 33%, 0.259);
+    --crease-shadow: hsla(39, 19%, 33%, 0.071);
+    --crease-light: hsla(39, 12%, 56%, 0.071);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +14,50 @@
 body {
     font-family: Helvetica;
     color: #223440;
-    background: #fdf9f1;
+    background: #fff;
     line-height: 1.6;
+    padding: 4rem 2rem 7rem;
+}
+
+/* ARKET */
+.paper {
+    position: relative;
+    isolation: isolate;
+    max-width: 1180px;
+    margin: 0 auto;
+    background-color: var(--paper);
+    box-shadow:
+        0 3px 8px -2px rgba(70, 62, 48, 0.07),
+        0 16px 28px -8px rgba(70, 62, 48, 0.12),
+        0 46px 66px -30px rgba(70, 62, 48, 0.24);
+}
+
+/* TEKSTUR: fint korn */
+.paper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+    background-image: url("../images/papertexture.jpg");
+    background-size: 440px 440px;
+    background-repeat: repeat;
+}
+
+/* TEKSTUR: rynker */
+.paper::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.3;
+    background-image: url("../images/paperwrinkles.jpg");
+    background-size: 650px 650px;
+    background-repeat: repeat;
 }
 
 /* HEADER Image */
@@ -30,11 +79,36 @@ body {
 }
 
 
-/* DIVIDER */
+/* DIVIDER = BRETT */
 .divider {
+    position: relative;
     height: 1px;
-    background: #ddd;
-    margin: 2rem 2rem;
+    margin: 3rem 0;
+    background: linear-gradient(90deg,
+        transparent 0%,
+        var(--crease) 4%,
+        var(--crease) 96%,
+        transparent 100%);
+}
+.divider::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    height: 18px;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent 0%, var(--crease-shadow) 100%);
+}
+.divider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 14px;
+    pointer-events: none;
+    background: linear-gradient(180deg, var(--crease-light) 0%, transparent 100%);
 }
 
 .intro {
@@ -101,6 +175,7 @@ body {
 
 /* IMAGE BOX */
 .project-image {
+    position: relative;
     padding: 1.5rem;
     display: flex;
     align-items: center;
@@ -162,6 +237,14 @@ body {
 
 @media (max-width: 900px) {
 
+    body {
+        padding: 1.5rem 1rem 4rem;
+    }
+
+    .divider {
+        margin: 2.25rem 0;
+    }
+
     .project {
         padding: 0 1.25rem 3rem;
     }
@@ -219,6 +302,16 @@ body {
         object-fit: contain;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    .project-image img {
+        transition: none;
+    }
+    .project-image img:hover {
+        transform: none;
+    }
+}
+
 
 
 
