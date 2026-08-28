@@ -19,6 +19,15 @@ body {
     padding: 4rem 2rem 7rem;
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+    content: "- ";
+}
+
 /* ARKET */
 .paper {
     position: relative;
