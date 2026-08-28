@@ -214,7 +214,7 @@ li::before {
 /* IMAGE BOX */
 .project-image {
     position: relative;
-    padding: 1.5rem;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
