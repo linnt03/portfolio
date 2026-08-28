@@ -242,23 +242,19 @@ body {
 .figma-text {
     margin-bottom: 1.5rem;
 }
-
 .figma-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
-
 }
-
 .figma-gallery img {
     height: 520px;     
     width: 100%;
-    object-fit: cover;      
-    background: #eee;
-    object-position: top;
+    object-fit: contain;      
+    background: transparent;
+    object-position: center;
 }
-
 
 
 
