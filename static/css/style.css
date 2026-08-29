@@ -65,7 +65,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 0.5rem;
+    gap: 1.5rem;
     margin: 3rem 0 2rem;
     flex-wrap: wrap;
     padding: 0 1rem;
@@ -98,21 +98,14 @@ body {
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
 }
 
-.sticker-1 { transform: rotate(-8deg); animation: float-1 3s ease-in-out infinite; }
-.sticker-2 { transform: rotate(6deg); animation: float-2 3.5s ease-in-out infinite; }
-.sticker-3 { transform: rotate(-5deg); animation: float-3 3.2s ease-in-out infinite; }
-.sticker-4 { transform: rotate(7deg); animation: float-4 3.8s ease-in-out infinite; }
-.sticker-5 { transform: rotate(-6deg); animation: float-5 3.3s ease-in-out infinite; }
-.sticker-6 { transform: rotate(5deg); animation: float-6 3.6s ease-in-out infinite; }
-.sticker-7 { transform: rotate(-7deg); animation: float-7 3.4s ease-in-out infinite; }
+.sticker-1 { transform: rotate(-8deg); }
+.sticker-2 { transform: rotate(6deg); }
+.sticker-3 { transform: rotate(-5deg); }
+.sticker-4 { transform: rotate(7deg); }
+.sticker-5 { transform: rotate(-6deg); }
+.sticker-6 { transform: rotate(5deg); }
+.sticker-7 { transform: rotate(-7deg); }
 
-@keyframes float-1 { 0%, 100% { transform: rotate(-8deg) translateY(0); } 50% { transform: rotate(-8deg) translateY(-8px); } }
-@keyframes float-2 { 0%, 100% { transform: rotate(6deg) translateY(-4px); } 50% { transform: rotate(6deg) translateY(4px); } }
-@keyframes float-3 { 0%, 100% { transform: rotate(-5deg) translateY(2px); } 50% { transform: rotate(-5deg) translateY(-6px); } }
-@keyframes float-4 { 0%, 100% { transform: rotate(7deg) translateY(-2px); } 50% { transform: rotate(7deg) translateY(6px); } }
-@keyframes float-5 { 0%, 100% { transform: rotate(-6deg) translateY(4px); } 50% { transform: rotate(-6deg) translateY(-4px); } }
-@keyframes float-6 { 0%, 100% { transform: rotate(5deg) translateY(-6px); } 50% { transform: rotate(5deg) translateY(2px); } }
-@keyframes float-7 { 0%, 100% { transform: rotate(-7deg) translateY(0); } 50% { transform: rotate(-7deg) translateY(-5px); } }
 
 ul {
     list-style: none;
