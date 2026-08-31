@@ -274,29 +274,43 @@ li::before {
 }
 
 .project-image img {
-    width: 100%;
+    width: 90%;
     height: auto;
     object-fit: contain;
     transition: transform 0.2s ease;
 }
 
 .project-image img:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .project-link {
     display: inline-block;
     margin-top: 1.5rem;
-    text-decoration: none;
     font-weight: 600;
     color: #373737;
     text-decoration: underline;
     text-underline-offset: 4px;
     text-decoration-thickness: 2px;
+    transition: color 0.15s ease,
+                text-underline-offset 0.15s ease,
+                text-decoration-thickness 0.15s ease;
+}
+
+.project-link:hover,
+.project-link:focus-visible {
+    color: #000;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 3px;
 }
 
 .project-link i {
     margin-right: 0.4rem;
+    transition: transform 0.15s ease;
+}
+
+.project-link:hover i {
+    transform: translateX(2px);
 }
 
 /* FIGMA */
@@ -317,6 +331,10 @@ li::before {
     object-fit: contain;      
     background: transparent;
     object-position: center;
+}
+
+.figma-gallery img:hover {
+    transform: scale(1.02);
 }
 
 /* RESPONSIVE */
