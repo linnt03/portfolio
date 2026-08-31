@@ -42,6 +42,7 @@ body {
     max-width: 900px;
     height: auto;
     display: block;
+    filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.15));
 }
 
 /* INTRO TEXT */
@@ -80,20 +81,21 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    filter: drop-shadow(0 5px 9px rgba(0, 0, 0, 0.15));
 }
 
 .sticker:hover {
     transform: scale(1.1) translateY(-4px);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.15));
 }
 
-.sticker-1 { transform: rotate(-8deg); }
+.sticker-1 { transform: rotate(-5deg); }
 .sticker-2 { transform: rotate(6deg); }
-.sticker-3 { transform: rotate(-5deg); }
-.sticker-4 { transform: rotate(7deg); }
+.sticker-3 { transform: rotate(-4deg); }
+.sticker-4 { transform: rotate(6deg); }
 .sticker-5 { transform: rotate(-6deg); }
-.sticker-6 { transform: rotate(5deg); }
-.sticker-7 { transform: rotate(-7deg); }
+.sticker-6 { transform: rotate(4deg); }
+.sticker-7 { transform: rotate(-5deg); }
 
 
 ul {
@@ -194,7 +196,7 @@ li::before {
 .divider {
     position: relative;
     height: 1px;
-    margin: 3rem 0;
+    margin: 2rem 0;
     background: linear-gradient(90deg,
         transparent 0%,
         var(--crease) 4%,
@@ -243,7 +245,7 @@ li::before {
 .project-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    gap: 1rem;
     align-items: stretch;
 }
 
@@ -259,7 +261,7 @@ li::before {
 .project-header {
     font-size: 0.95rem;
     font-weight: bold;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -275,11 +277,11 @@ li::before {
     width: 100%;
     height: auto;
     object-fit: contain;
-    transition: transform 0.3s ease;
+    transition: transform 0.2s ease;
 }
 
 .project-image img:hover {
-    transform: scale(1.02);
+    transform: scale(1.1);
 }
 
 .project-link {
