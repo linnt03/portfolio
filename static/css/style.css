@@ -64,37 +64,22 @@ body {
   margin-top: 1rem;
 }
 
-/* STICKER ROW - PLAYFUL NAVIGATION */
+/* STICKER ROW */
 .sticker-row {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    gap: 1.5rem;
-    margin: 3rem 0 2rem;
     flex-wrap: wrap;
-    padding: 0 1rem;
+    gap: 1.5rem;
+    justify-content: center;
 }
 
 .sticker {
-    display: inline-block;
-    text-decoration: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, filter 0.2s ease;
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    flex: 0 0 clamp(220px, 28%, 320px);
 }
 
-.sticker-placeholder {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #e8e6e2;
-    border: 2px dashed #999;
-    border-radius: 8px;
-    font-weight: bold;
-    color: #666;
-    font-size: 1.2rem;
+.sticker img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .sticker:hover {
