@@ -48,7 +48,6 @@ body {
 .intro {
   max-width: 720px;
   margin: 0 auto 3rem;
-  padding: 0 2rem;
   text-align: center;
 }
 
@@ -88,13 +87,13 @@ body {
     filter: drop-shadow(0 8px 10px rgba(0, 0, 0, 0.15));
 }
 
-.sticker-1 { transform: rotate(-5deg); }
-.sticker-2 { transform: rotate(6deg); }
+.sticker-1 { transform: rotate(-3deg); }
+.sticker-2 { transform: rotate(2deg); }
 .sticker-3 { transform: rotate(-4deg); }
-.sticker-4 { transform: rotate(6deg); }
-.sticker-5 { transform: rotate(-6deg); }
+.sticker-4 { transform: rotate(3deg); }
+.sticker-5 { transform: rotate(-3deg); }
 .sticker-6 { transform: rotate(4deg); }
-.sticker-7 { transform: rotate(-5deg); }
+.sticker-7 { transform: rotate(-2deg); }
 
 
 ul {
@@ -195,7 +194,7 @@ li::before {
 .divider {
     position: relative;
     height: 1px;
-    margin: 3rem calc(-1 * var(--paper-padding));
+    margin: 2.5rem calc(-1 * var(--paper-padding));
     background: linear-gradient(90deg,
         transparent 0%,
         var(--crease) 1%,
@@ -229,15 +228,16 @@ li::before {
 .project {
     max-width: 1100px;
     margin: 0 auto;
-    /*padding: 0 2rem rem;*/
+    padding: 0 2rem 3rem;
 }
 
 .project-title {
     font-size: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 .project-tagline {
-    color: #4f5051;
+    color: #757676;
     margin-bottom: 2rem;
     font-size: 1.1rem;
 }
@@ -246,6 +246,7 @@ li::before {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
+    padding-top: 1.5rem;
     align-items: stretch;
 }
 
@@ -267,6 +268,7 @@ li::before {
 .project-image {
     position: relative;
     padding: 0.5rem;
+    padding-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,24 +314,140 @@ li::before {
     transform: translateX(2px);
 }
 
+/* POST-IT */
+.postit {
+    position: relative;
+    display: inline-block;
+    background: #fff3a4;
+    padding: 1.8rem 1.8rem 1.8rem;
+    margin: 1.5rem 0;
+    transform: rotate(-1.5deg);
+    box-shadow:
+        0 1px 2px rgba(52, 45, 34, 0.12),
+        0 6px 12px -4px rgba(70, 62, 48, 0.22),
+        0 14px 22px -12px rgba(70, 62, 48, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.postit::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 90px;
+    height: 26px;
+    transform: translateX(-50%) rotate(2deg);
+    background: hsla(47, 19%, 85%, 0.65);
+    box-shadow: 0 2px 3px rgba(85, 78, 67, 0.15);
+    pointer-events: none;
+}
+
+.postit::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.25;
+    background-image: url("../images/paperwrinkles.jpg");
+    background-size: 300px 300px;
+    background-repeat: repeat;
+}
+
+.postit ul {
+    margin: 0;
+}
+
+.postit li {
+    margin-bottom: 0.35rem;
+}
+
+.postit li:last-child {
+    margin-bottom: 0;
+}
+
+.postit:hover {
+    transform: rotate(-0.5deg) translateY(-3px);
+    box-shadow:
+        0 1px 2px rgba(70, 62, 48, 0.12),
+        0 10px 18px -4px rgba(70, 62, 48, 0.25),
+        0 20px 30px -14px rgba(70, 62, 48, 0.3);
+}
+
+.postit-alt { transform: rotate(0.9deg); }
+.postit-alt:hover { transform: rotate(0.5deg) translateY(-2px); }
+
+/* POST-IT TYPOGRAFI */
+.postit {
+    font-family: "Kalam", "Courier Prime", cursive;
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.55;
+    color: #46403a;
+}
+
+.postit .project-header {
+    color: #1b1815;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0.9rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+}
+
+.postit .project-header::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: -0.35em;
+    right: -0.45em;
+    top: 0.42em;
+    bottom: 0.08em;
+    background: hsla(30, 100%, 68%, 0.716);
+    transform: rotate(-1.2deg) skewX(-4deg);
+    border-radius: 10% 60% 20% 10% / 70% 55% 65% 50%;
+}
+
+.postit li {
+    margin-bottom: 0.4rem;
+}
+
+.postit li::before {
+    content: "– ";
+}
+
 /* FIGMA and centered texts*/
 
 .figma-text {
     margin-bottom: 1rem;
 }
 
+.figma-section .project-title {
+    text-align: center;
+    padding-top: 3.5rem;
+    font-size: 2.2rem;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+}
+
+.figma-section .project-tagline {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
 .figma-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0rem 1.5rem;
+
 }
 
 .figma-gallery img {
-    height: 520px;     
+    height: auto;
     width: 100%;
-    object-fit: contain;      
-    background: transparent;
-    object-position: center;
+    display: block;
+    object-fit: contain;
 }
 
 .figma-gallery img:hover {
