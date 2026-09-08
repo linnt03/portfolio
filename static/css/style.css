@@ -849,6 +849,16 @@ section:nth-of-type(odd)  .postit { --tilt: -2deg; }
         height: 50px;
         font-size: 0.9rem;
     }
+
+    .hero-section {
+        padding: 1rem 0 2rem;
+        margin-inline: -1rem;  
+    }
+
+    .hero-title img {
+        width: 100%;
+        max-width: none;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -879,4 +889,5 @@ section:nth-of-type(odd)  .postit { --tilt: -2deg; }
     .mockup:hover {
         transform: rotate(var(--tilt)) translateY(var(--shift));
     }
+
 }
