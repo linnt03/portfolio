@@ -830,7 +830,16 @@ section:nth-of-type(odd)  .postit { --tilt: -2deg; }
 
     .photo-pair {
         position: static;
-        display: contents;
+        display: flex;
+        flex: 0 0 auto;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .photo-pair .photo-2,
+    .photo-pair .photo-3 {
+        flex: 0 0 auto;
+        width: clamp(115px, 32vw, 165px);
     }
 }
 
