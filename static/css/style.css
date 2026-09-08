@@ -285,10 +285,11 @@ li::before {
 }
 
 #project-marketer .project-content {
-    grid-template-columns: 1fr 1.25fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.25fr);
     gap: 2.5rem;
     align-items: start;
 }
+
 
 #project-marketer .project-tagline {
     margin-bottom: 0;
@@ -305,7 +306,8 @@ li::before {
 /* MOCKUP-GRID (internship) */
 .mockup-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-width: 0;
     gap: 1.75rem 1.5rem;
     align-content: start;
     padding: 1.5rem 0 4rem;
