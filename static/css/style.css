@@ -712,6 +712,76 @@ section:nth-of-type(odd)  .postit { --tilt: -2deg; }
 .photo-pair .photo-2 { width: 180px; }
 .photo-pair .photo-3 { width: 170px; }
 
+/* TAPED TABLE (vaff) */
+#project-vaff .project-image {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.taped-table {
+    --tilt: 1.1deg;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    padding: 0.45rem;
+    transform: rotate(var(--tilt));
+    box-shadow:
+        0 1px 2px rgba(52, 45, 34, 0.12),
+        0 6px 12px -4px rgba(70, 62, 48, 0.22),
+        0 14px 22px -12px rgba(70, 62, 48, 0.28);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.taped-table img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.taped-table img:hover {
+    transform: none;
+}
+
+/* to teipbiter i øvre hjørner */
+.taped-table::before,
+.taped-table::after {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: -8px;
+    width: 76px;
+    height: 22px;
+    background: hsla(47, 22%, 84%, 0.72);
+    box-shadow: 0 2px 3px rgba(85, 78, 67, 0.15);
+    pointer-events: none;
+}
+
+.taped-table::before {
+    left: 1.5rem;
+    transform: rotate(-4deg);
+}
+
+.taped-table::after {
+    right: 1.5rem;
+    transform: rotate(3.5deg);
+}
+
+.taped-table:hover {
+    transform: rotate(calc(var(--tilt) * 0.35)) translateY(-3px);
+    box-shadow:
+        0 1px 2px rgba(70, 62, 48, 0.12),
+        0 10px 18px -4px rgba(70, 62, 48, 0.25),
+        0 20px 30px -14px rgba(70, 62, 48, 0.3);
+}
+
+.taped-table:focus-visible {
+    outline: 3px solid #6b7a86;
+    outline-offset: 4px;
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
